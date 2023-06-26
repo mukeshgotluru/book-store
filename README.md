@@ -4,40 +4,6 @@ You will demonstrate your skills by creating an app that will fetch data from an
 
 This is an individual assessment. All work must be your own.
 
-### Prerequisites
-
-#### UI Prerequisites
-
-<details>
-<summary>Click to view</summary>
-
-- What is Figma?
-  - Figma is a vector graphics editor and prototyping tool which is primarily web-based. You can check more info on the <a href="https://www.figma.com/" target="_blank">Website</a>.
-- Create a Free account in Figma
-  - Kindly follow the instructions as shown in <a href="https://www.youtube.com/watch?v=hrHL2VLMl7g&t=37s" target="_blank">this</a> video to create a Free Figma account. Watch the video upto **00:50**.
-- How to Check CSS in Figma?
-  - Kindly follow the instructions as shown in <a href="https://www.youtube.com/watch?v=B242nuM3y2s" target="_blank">this</a> video to check CSS in the Figma screen. Watch the video upto **02:45**.
-- Export Images in Figma screen
-
-  - Kindly follow the instructions as shown in <a href="https://www.youtube.com/watch?v=NpzL1MONwaw" target="_blank">this</a> video to export images from the Figma screen.
-  - Click on the Export button to get Export options as shown in the below image.
-
-  <div style="text-align:center;margin:10px 0px 0px 45px;width:200px;">
-    <img src="https://assets.ccbp.in/frontend/react-js/figma-export-option.png" />
-  </div>
-
-- Upload your exported images from Figma to Cloudinary and get image URLs from Cloudinary. Refer <a href="https://learning.ccbp.in/projects/course?c_id=fe4c935d-3ad5-4bb8-a1a5-9b045ae70010&s_id=2f72d6fe-09a7-4c0a-b0db-196740c853a0&t_id=6535e48d-fb4e-45c4-9654-3da423c79e26" target="_blank">this</a> session for better understanding.
-
-</details>
-
-#### Design Files
-
-<details>
-<summary>Click to view</summary>
-
-- You can check the **Design Files** for different devices <a href="https://www.figma.com/file/T8BdpViEZL6DhFxu0HlEPY/Book-Hub?node-id=0%3A1" target="_blank">here</a>.
-
-</details>
 
 ### Set Up Instructions
 
@@ -247,19 +213,7 @@ The app must have the following functionalities
 
 </details>
 
-### Resources
 
-<details>
-<summary>Data fetch URLs</summary>
-
-- **Note:** Use the below sample code snippet to make a POST request on Login using valid username and password.
-
-  ```js
-  const options = {
-    method: 'POST',
-    body: JSON.stringify(userDetails),
-  }
-  ```
 
 **Login API**
 
@@ -280,124 +234,8 @@ Returns a response based on the credentials provided
 }
 ```
 
-#### Sample Success Response
 
-```json
-{
-  "jwt_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsIiwicm9sZSI6IlBSSU1FX1VTRVIiLCJpYXQiOjE2MTk2Mjg2MTN9. nZDlFsnSWArLKKeF0QbmdVfLgzUbx1BGJsqa2kc_21Y"
-}
-```
 
-#### Sample Failure Response
-
-```json
-{
-  "status_code": 404,
-  "error_msg": "Username is not found"
-}
-```
-
-**Top Rated Books API**
-
-#### URL: `https://apis.ccbp.in/book-hub/top-rated-books`
-
-#### Method: `GET`
-
-#### Description:
-
-Returns a response containing the list of 10 top rated books
-
-#### Sample Response
-
-```json
-{
-  "books": [
-    {
-      "id": "561d0af9-3cec-426d-9721-35ed8d7e9c3c",
-      "author_name": "Chetan Bhagat",
-      "cover_pic": "https://assets.ccbp.in/frontend/react-js/half-girlfriend-book.png",
-      "title": "Half Girlfriend"
-    },
-    {
-      "id": "5f7fe73a-c4f2-4d58-b4ad-ec88426e26be",
-      "author_name": "Robert Kiyosaki",
-      "cover_pic": "https://assets.ccbp.in/frontend/react-js/rich-dad-poor-dad-book.png",
-      "title": "Rich Dad Poor Dad"
-    },
-    ...
-  ],
-  "total": 10
-}
-```
-
-**Books API**
-
-#### URL: `https://apis.ccbp.in/book-hub/books?shelf={bookshelfName}&search={searchText}`
-
-#### Example: `https://apis.ccbp.in/book-hub/books?shelf=Read&search=Luke`
-
-#### Method: `GET`
-
-#### Description:
-
-Returns a response containing the list of books based on the query parameters
-
-#### Sample Response
-
-```json
-{
-  "books": [
-    {
-      "id": "54402549-a4bd-4c99-a176-bd795d47173a",
-      "title": "One life one chance",
-      "read_status": "Read",
-      "rating": 4.2,
-      "author_name": "Luke Richmond",
-      "cover_pic": "https://assets.ccbp.in/frontend/react-js/one-life-one-chance-book.png"
-    },
-    ...
-  ],
-  "total": 10
-}
-```
-
-**Book Details API**
-
-#### URL: `https://apis.ccbp.in/book-hub/books/{bookId}`
-
-#### Example: `https://apis.ccbp.in/book-hub/books/7850622e-1b70-4396-963d-e68d5a2577d7`
-
-#### Method: `GET`
-
-#### Description:
-
-Returns a response containing book details
-
-#### Sample Response
-
-```json
-{
-  "book_details": {
-    "id": "7850622e-1b70-4396-963d-e68d5a2577d7",
-    "author_name": "Ady Barkan",
-    "cover_pic": "https://assets.ccbp.in/frontend/react-js/eyes-to-the-wind-book.png",
-    "about_book": "Eyes to the Wind is a rousing memoir featuring intertwining storylines about determination, perseverance, and how to live a life filled with purpose and intention.",
-    "rating": 4.8,
-    "read_status": "READ",
-    "title": "Eyes to the Wind",
-    "about_author": "Ady Barkan is an American lawyer and liberal activist. He is a co-founder of the Be a Hero PAC and is an organizer for the Center for Popular Democracy, where he led the Fed Up campaign."
-  }
-}
-```
-
-</details>
-
-### User Credentials
-
-<details>
-<summary>Click to view user credentials</summary>
-
-<br/>
 
 **You can use any one of the following credentials**
 
@@ -456,28 +294,3 @@ Returns a response containing book details
   password: princess@9
 ```
 
-<br/>
-</details>
-
-### Project Submission Instructions
-
-- For Mini Projects, you can submit the test cases at your own pace. But we suggest you to submit the code to know the percentage of completion through test cases and that score will be considered for your interviews.
-
-- Also it's important to publish your code frequently using `Step - 4` in the Instructions tab.
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
-# book-store
-# book-store
-# book-store
-# book-store
-# book-store
-# book-store
-# book-store
-# book-store
-# book-store
-# book-store
-# book-store
