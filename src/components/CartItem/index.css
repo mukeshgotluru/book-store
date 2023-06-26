@@ -1,0 +1,9 @@
+.book-item-list-container {
+  display: flex;
+
+  align-items: center;
+}
+
+.book-item-details-card-container {
+  margin-bottom: 15px;
+}

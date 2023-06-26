@@ -1,0 +1,207 @@
+@media screen and (min-width: 768px) {
+  .book-shelves-bg-container-lg {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(212, 217, 219);
+    padding: 30px;
+  }
+}
+.bookshelves-heading-bookshelves-heading-lg {
+  font-family: 'inter';
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .book-shelves-filter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding-left: 15px;
+    list-style-type: none;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .book-shelves-filter-container {
+    list-style-type: none;
+  }
+}
+@media screen and (min-width: 787px) {
+  .filter-un-order-list-container {
+    list-style-type: none;
+    margin-top: 10px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 786px) {
+  .filter-un-order-list-container {
+    list-style-type: none;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 787px) {
+  .active-filter-list-lg {
+    border: none;
+    margin-top: 10px;
+    background-color: transparent;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 0px;
+    padding: 0px;
+    align-items: center;
+    color: rgb(69, 74, 75);
+  }
+}
+@media screen and (max-width: 786px) {
+  .active-filter-list-lg {
+    margin-top: 10px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 0px;
+    border-color: rgb(69, 74, 75);
+    border-radius: 10px;
+    padding: 6px;
+    align-items: center;
+    color: rgb(69, 74, 75);
+  }
+}
+@media screen and (min-width: 786px) {
+  .bookshelves-heading {
+    display: none;
+  }
+  .bookshelves-heading-sm {
+    display: none;
+  }
+  .books-filters-sm {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filtered-books-search-input-container-lg {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: inter;
+    font-weight: 700;
+    font-size: 10px;
+    color: white;
+    align-items: center;
+    margin: 15px;
+  }
+}
+.search-input {
+  height: 40px;
+  width: 400px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: #f5f5f5;
+  margin: 20px;
+}
+.search-btn {
+  height: 40px;
+  width: 60px;
+  border: none;
+  outline: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: blue;
+  border-left: 2px solid #000;
+}
+.search-icon {
+  font-size: 20spx;
+  font-weight: 700;
+}
+@media screen and (min-width: 787px) {
+  .large-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+.bookList-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+@media screen and (max-width: 786px) {
+  .search-input-container {
+    display: flex;
+    align-items: center;
+  }
+}
+.active-filter-lg {
+  background-color: rgb(14, 103, 238);
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: roboto;
+}
+@media screen and (max-width: 786px) {
+  .filtered-books-heading {
+    display: none;
+  }
+}
+@media screen and (min-width: 787px) {
+  .filtered-books-heading {
+    color: black;
+    font-family: roboto;
+  }
+}
+.no-match-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+.no-match-image {
+  height: 400px;
+  width: 700px;
+  border-radius: 15px;
+}
+
+.top-rated-books-failure-container {
+  width: 100%;
+}
+
+.top-rated-books-failure-image {
+  width: auto;
+}
+
+.filtered-books-heading {
+  margin-left: 25px;
+}
+
+.light {
+  color: #000000;
+}
+
+.dark {
+  color: #ffffff;
+}
+
+.bg-light {
+  background-color: #181818;
+}
+
+.bg-dark {
+  color: #ffffff;
+}
